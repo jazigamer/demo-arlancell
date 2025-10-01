@@ -130,6 +130,78 @@ function initTestimonialCarousel() {
             texto: 'O melhor atendimento e melhor avaliador de Araçoiaba 👏👏👏',
             estrelas: 5,
         },
+        {
+    nome: 'Gabriel',
+    handle: '@Silvazkk7_',
+    avatar: './assets/avatares/avatar3.jpg',
+    texto:
+      'Só oferece produtos de qualidad',
+    estrelas: 5,
+  },
+  {
+    nome: 'Vanessa',
+    handle: '@wanessagadelha',
+    avatar: './assets/avatares/avatar4.jpg',
+    texto:
+      'Ótimo Atendimento, Excelente Profissional A Melhor Loja Da Região Sem Dúvidas 🙅🏻‍♀️ Entregas Rápidas Pra Toda A Região 🤝',
+    estrelas: 5,
+  },
+  {
+    nome: 'Noeli',
+    handle: '@antonia.campos12',
+    avatar: './assets/avatares/avatar5.jpg',
+    texto:
+      'Um ótimo trabalho 🙂',
+    estrelas: 5,
+  },
+  {
+    nome: 'Gabriel costa',
+    handle: '@_ogabi_',
+    avatar: './assets/avatares/avatar6.jpg',
+    texto:
+      'Produtos tops ótima qualidade, sem falar em um ótimo atendimento 😉',
+    estrelas: 5,
+  },
+  {
+    nome: 'Geovanna',
+    handle: '@giov4nna.___',
+    avatar: './assets/avatares/avatar7.jpg',
+    texto:
+      'Otimo',
+    estrelas: 5,
+  },
+  {
+    nome: 'Daccy Almeida',
+    handle: '@daccyalmeida',
+    avatar: './assets/avatares/avatar8.png',
+    texto:
+      'Trabalho com Excelência',
+    estrelas: 5,
+  },
+  {
+    nome: 'João Eudes',
+    handle: '@joaoeudes',
+    avatar: './assets/avatares/avatar9.png',
+    texto:
+      'A melhor assistência da cidade!',
+    estrelas: 5,
+  },
+  {
+    nome: 'Francisco Jonas rocha da Silva',
+    handle: '@csilvaxx_02',
+    avatar: './assets/avatares/avatar10.png',
+    texto:
+      'A melhor que tem em Aracoiaba 🔥🚀',
+    estrelas: 5,
+  },
+  {
+    nome: 'Julio',
+    handle: '@Juliosousah1231',
+    avatar: './assets/avatares/avatar11.png',
+    texto:
+      'Amo os produtos tudo de qualidade',
+    estrelas: 5,
+  },
         // ... (seus outros depoimentos)
     ];
 
