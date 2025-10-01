@@ -2,6 +2,15 @@
 <html lang="pt-BR">
 
 <head>
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-492K84P5CN"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-492K84P5CN');
+</script>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description"
@@ -13,49 +22,11 @@
 
   <title>ArlanCell - Assistência Técnica & Venda de Celulares | Aracoiaba</title>
 
-  <!-- Google tag (gtag.js) - Cole o código do Google Analytics aqui depois -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-    gtag('config', 'GA_MEASUREMENT_ID');
-  </script>
-
   <!-- Tailwind CSS -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            gold: '#D4AF37',
-            black: '#000000',
-            dark: '#121212',
-          },
-          animation: {
-            'fade-in': 'fadeIn 0.8s ease-in-out',
-            'slide-up': 'slideUp 0.6s ease-out',
-            'pulse-gold': 'pulseGold 2s infinite',
-          },
-          keyframes: {
-            fadeIn: {
-              '0%': { opacity: '0' },
-              '100%': { opacity: '1' },
-            },
-            slideUp: {
-              '0%': { transform: 'translateY(20px)', opacity: '0' },
-              '100%': { transform: 'translateY(0)', opacity: '1' },
-            },
-            pulseGold: {
-              '0%, 100%': { boxShadow: '0 0 0 0 rgba(212, 175, 55, 0.7)' },
-              '50%': { boxShadow: '0 0 0 10px rgba(212, 175, 55, 0)' },
-            }
-          }
-        }
-      }
-    }
-  </script>
+ <!-- NOVA LINHA - Substitua a linha 64 no seu HTML -->
+<script src="https://cdn.tailwindcss.com"></script>
+<!-- POR: -->
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 
   <!-- FontAwesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
@@ -76,6 +47,7 @@
       "@context": "https://schema.org",
       "@type": "LocalBusiness",
       "name": "ArlanCell",
+      "image": "https://demo-arlancell.netlify.app/logo.png",
       "description": "Assistência Técnica Especializada em Celulares, Venda de Smartphones Novos e Seminovos, Acessórios em Aracoiaba",
       "url": "https://arlancell.com.br",
       "telephone": "+55-85-98216-3973",
@@ -289,7 +261,7 @@
         <!-- Image Content -->
         <div class="relative animate-slide-up">
           <div class="relative bg-gradient-to-br from-gold/20 to-transparent rounded-3xl p-8 backdrop-blur-sm">
-            <img src="./logo-site-ofc.png" alt="ArlanCell - Celulares e Acessórios"
+            <img src="./assets/logo-site-ofc.png" alt="ArlanCell - Celulares e Acessórios"
               class="rounded-2xl shadow-2xl w-full max-w-md mx-auto transform hover:scale-105 transition-transform duration-500" />
           </div>
 
@@ -954,7 +926,7 @@
       <!-- Coluna 1 - Logo e Sobre -->
       <div class="lg:col-span-1">
         <div class="flex items-center space-x-4 mb-6">
-          <img src="./logo-site-ofc.png" alt="Logo ArlanCell" class="h-16 filter brightness-110" />
+          <img src="./assets/logo-site-ofc.png" alt="Logo ArlanCell" class="h-16 filter brightness-110" />
           <div>
             <div class="text-gold font-bold text-xl">ArlanCell</div>
             <div class="text-gray-400 text-sm">Celulares & Acessórios</div>
