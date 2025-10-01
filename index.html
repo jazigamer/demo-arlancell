@@ -1,0 +1,1202 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="ArlanCell - Assistência Técnica Especializada em Celulares, Venda de Smartphones Novos e Seminovos, Acessórios em Aracoiaba. Orçamento Grátis!">
+  <meta name="keywords"
+    content="assistência técnica celular, venda de celular, Aracoiaba, manutenção iPhone, troca de tela, ArlanCell">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://arlancell.com.br">
+
+  <title>ArlanCell - Assistência Técnica & Venda de Celulares | Aracoiaba</title>
+
+  <!-- Google tag (gtag.js) - Cole o código do Google Analytics aqui depois -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'GA_MEASUREMENT_ID');
+  </script>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            gold: '#D4AF37',
+            black: '#000000',
+            dark: '#121212',
+          },
+          animation: {
+            'fade-in': 'fadeIn 0.8s ease-in-out',
+            'slide-up': 'slideUp 0.6s ease-out',
+            'pulse-gold': 'pulseGold 2s infinite',
+          },
+          keyframes: {
+            fadeIn: {
+              '0%': { opacity: '0' },
+              '100%': { opacity: '1' },
+            },
+            slideUp: {
+              '0%': { transform: 'translateY(20px)', opacity: '0' },
+              '100%': { transform: 'translateY(0)', opacity: '1' },
+            },
+            pulseGold: {
+              '0%, 100%': { boxShadow: '0 0 0 0 rgba(212, 175, 55, 0.7)' },
+              '50%': { boxShadow: '0 0 0 10px rgba(212, 175, 55, 0)' },
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- FontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <!-- CSS Personalizado -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Favicon -->
+  <link rel="icon" href="./assets/logo-site.png" type="image/png" />
+
+  <!-- Font Google -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+
+  <!-- Schema Markup para Local Business -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "ArlanCell",
+      "description": "Assistência Técnica Especializada em Celulares, Venda de Smartphones Novos e Seminovos, Acessórios em Aracoiaba",
+      "url": "https://arlancell.com.br",
+      "telephone": "+55-85-98216-3973",
+      "email": "arlantecgames@gmail.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Av. Tiradentes, 745",
+        "addressLocality": "Aracoiaba",
+        "addressRegion": "CE",
+        "addressCountry": "BR",
+        "postalCode": "62750-000"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "-4.370978",
+        "longitude": "-38.811934"
+      },
+      "openingHours": [
+        "Mo-Fr 08:00-18:00",
+        "Sa 08:00-12:00"
+      ],
+      "priceRange": "R$ 15 - R$ 2000",
+      "serviceArea": {
+        "@type": "GeoCircle",
+        "geoMidpoint": {
+          "@type": "GeoCoordinates",
+          "latitude": "-4.370978",
+          "longitude": "-38.811934"
+        },
+        "geoRadius": "20000"
+      },
+      "sameAs": [
+        "https://www.instagram.com/arlancell/"
+      ],
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5",
+        "ratingCount": "1000",
+        "bestRating": "5",
+        "worstRating": "1"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Serviços de Assistência Técnica",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Troca de Tela",
+              "description": "Troca de tela para iPhone e Android com garantia"
+            },
+            "price": "120",
+            "priceCurrency": "BRL"
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Limpeza Interna",
+              "description": "Serviço de limpeza completa interna do aparelho"
+            },
+            "price": "0",
+            "priceCurrency": "BRL"
+          }
+        ]
+      }
+    }
+  </script>
+</head>
+
+<body class="antialiased">
+  <!-- Loading Screen -->
+  <div id="loading" class="fixed inset-0 bg-black z-50 flex items-center justify-center">
+    <div class="text-center">
+      <div class="w-16 h-16 border-4 border-gold border-t-transparent rounded-full animate-spin mx-auto mb-4"></div>
+      <p class="text-gold font-semibold">Carregando ArlanCell...</p>
+    </div>
+  </div>
+
+  <!-- WhatsApp Float Button -->
+  <a href="https://wa.me/5585982163973?text=Olá! Gostaria de um orçamento para assistência técnica ou informações sobre celulares!"
+    class="whatsapp-float bg-green-500 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-2xl hover:bg-green-600 transition-all duration-300"
+    target="_blank">
+    <i class="fab fa-whatsapp text-2xl"></i>
+  </a>
+
+  <!-- Navbar -->
+  <nav class="bg-black/95 backdrop-blur-sm text-white shadow-xl sticky top-0 z-50 border-b border-gold/20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between h-20 items-center">
+        <div class="flex items-center space-x-4">
+          <img src="./assets/logo-site-ofc.png" alt="Logo ArlanCell" class="h-12 md:h-14" />
+          <div class="hidden md:block">
+            <div class="text-gold font-bold text-lg">ArlanCell</div>
+            <div class="text-gray-400 text-sm">Celulares & Acessórios</div>
+          </div>
+        </div>
+
+        <!-- Menu desktop -->
+        <div class="hidden lg:flex space-x-8">
+          <a href="#inicio"
+            class="text-white hover:text-gold transition-all duration-300 font-medium border-b-2 border-gold px-1">Início</a>
+          <a href="#servicos" class="text-gray-300 hover:text-gold transition-all duration-300 font-medium">Serviços</a>
+          <a href="#promocoes"
+            class="text-gray-300 hover:text-gold transition-all duration-300 font-medium">Promoções</a>
+          <a href="#feedback"
+            class="text-gray-300 hover:text-gold transition-all duration-300 font-medium">Avaliações</a>
+          <a href="#contato" class="text-gray-300 hover:text-gold transition-all duration-300 font-medium">Contato</a>
+        </div>
+
+        <div class="hidden lg:flex items-center space-x-4">
+          <a href="tel:85982163973" class="text-gray-300 hover:text-white transition">
+            <i class="fas fa-phone-alt mr-2"></i>(85) 98216-3973
+          </a>
+          <a href="https://wa.me/5585982163973?text=Olá! Gostaria de um orçamento!"
+            class="btn-gold px-6 py-3 rounded-lg font-semibold transition-all duration-300">
+            <i class="fab fa-whatsapp mr-2"></i>WhatsApp
+          </a>
+        </div>
+
+        <!-- Botão menu mobile -->
+        <div class="lg:hidden flex items-center">
+          <button id="menu-btn" class="p-3 rounded-lg text-gold hover:bg-gold/10 transition">
+            <i class="fas fa-bars text-xl"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Menu mobile -->
+    <div id="mobile-menu" class="lg:hidden">
+      <a href="#inicio" class="text-white text-lg py-3 border-b border-gray-800 hover:text-gold transition">Início</a>
+      <a href="#servicos"
+        class="text-white text-lg py-3 border-b border-gray-800 hover:text-gold transition">Serviços</a>
+      <a href="#promocoes"
+        class="text-white text-lg py-3 border-b border-gray-800 hover:text-gold transition">Promoções</a>
+      <a href="#feedback"
+        class="text-white text-lg py-3 border-b border-gray-800 hover:text-gold transition">Avaliações</a>
+      <a href="#contato" class="text-white text-lg py-3 border-b border-gray-800 hover:text-gold transition">Contato</a>
+      <div class="pt-6 space-y-4">
+        <a href="tel:85982163973" class="block text-center text-gray-300 hover:text-white transition">
+          <i class="fas fa-phone-alt mr-2"></i>(85) 98216-3973
+        </a>
+        <a href="https://wa.me/5585982163973?text=Olá! Gostaria de um orçamento!"
+          class="btn-gold w-full py-4 rounded-lg font-semibold text-center block">
+          <i class="fab fa-whatsapp mr-2"></i>Falar no WhatsApp
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="inicio" class="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <div class="absolute inset-0 bg-black/70 z-0"></div>
+    <div class="absolute inset-0 z-0">
+      <div class="hero-gradient absolute inset-0"></div>
+    </div>
+
+    <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 w-full">
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
+        <!-- Text Content -->
+        <div class="text-center lg:text-left animate-fade-in">
+          <div
+            class="inline-block bg-gold/20 text-gold px-4 py-2 rounded-full text-sm font-semibold mb-6 border border-gold/30">
+            ⭐ Assistência Técnica Especializada
+          </div>
+
+          <h1 class="text-4xl md:text-6xl lg:text-7xl font-black leading-tight mb-6">
+            Seu Celular com
+            <span
+              class="text-gold bg-gradient-to-r from-gold to-yellow-200 bg-clip-text text-transparent">Expertise</span>
+            Profissional
+          </h1>
+
+          <p class="text-xl md:text-2xl text-gray-300 mb-8 leading-relaxed">
+            Conserto, venda e personalização.
+            <span class="text-gold font-semibold">+1000 clientes satisfeitos</span>
+            em Aracoiaba e região!
+          </p>
+
+          <div class="space-y-4 mb-8">
+            <div class="flex items-center justify-center lg:justify-start space-x-4 text-gray-300">
+              <i class="fas fa-check-circle text-gold"></i>
+              <span>Orçamento Grátis e Rápido</span>
+            </div>
+            <div class="flex items-center justify-center lg:justify-start space-x-4 text-gray-300">
+              <i class="fas fa-check-circle text-gold"></i>
+              <span>Peças Originais e Garantia</span>
+            </div>
+            <div class="flex items-center justify-center lg:justify-start space-x-4 text-gray-300">
+              <i class="fas fa-check-circle text-gold"></i>
+              <span>Atendimento Personalizado</span>
+            </div>
+          </div>
+
+          <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+            <a href="https://wa.me/5585982163973?text=Olá! Gostaria de um orçamento para assistência técnica!"
+              class="btn-gold px-8 py-4 rounded-lg text-lg font-bold transition-all duration-300 group">
+              <i class="fab fa-whatsapp mr-2"></i>
+              ORÇAMENTO GRÁTIS
+              <i class="fas fa-arrow-right ml-2 group-hover:translate-x-1 transition-transform"></i>
+            </a>
+            <a href="#servicos"
+              class="border-2 border-gold text-gold hover:bg-gold hover:text-black px-8 py-4 rounded-lg text-lg font-bold transition-all duration-300">
+              NOSSOS SERVIÇOS
+            </a>
+          </div>
+        </div>
+
+        <!-- Image Content -->
+        <div class="relative animate-slide-up">
+          <div class="relative bg-gradient-to-br from-gold/20 to-transparent rounded-3xl p-8 backdrop-blur-sm">
+            <img src="./logo-site-ofc.png" alt="ArlanCell - Celulares e Acessórios"
+              class="rounded-2xl shadow-2xl w-full max-w-md mx-auto transform hover:scale-105 transition-transform duration-500" />
+          </div>
+
+          <!-- Floating Elements -->
+          <div class="absolute -top-4 -left-4 bg-gold text-black px-4 py-2 rounded-lg font-bold shadow-lg">
+            🏆 Melhor Avaliada
+          </div>
+          <div class="absolute -bottom-4 -right-4 bg-green-500 text-white px-4 py-2 rounded-lg font-bold shadow-lg">
+            ⚡ Entrega Rápida
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scroll Indicator -->
+    <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+      <a href="#servicos" class="text-gold hover:text-yellow-300 transition">
+        <i class="fas fa-chevron-down text-2xl"></i>
+      </a>
+    </div>
+  </section>
+
+  <!-- Promoções Section -->
+  <section id="promocoes" class="py-20 bg-gradient-to-b from-black to-dark section-fade">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl md:text-5xl font-black mb-6">
+          <span class="text-gold">Promoções</span> da Semana
+        </h2>
+        <div class="w-32 h-1 bg-gradient-to-r from-gold to-transparent mx-auto mb-6"></div>
+        <p class="text-xl text-gray-400 max-w-3xl mx-auto">
+          Ofertas especiais por tempo limitado! Aproveite nossos melhores preços.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Promo 1 -->
+        <div
+          class="feature-card bg-gradient-to-br from-gold/10 to-black rounded-2xl p-8 gold-border relative overflow-hidden group">
+          <div class="absolute -top-1 -right-4 bg-red-500 text-white px-6 py-2 rounded-full font-bold rotate-12 z-10">
+            -20%
+          </div>
+          <div class="text-gold text-4xl mb-6">
+            <i class="fas fa-mobile-alt"></i>
+          </div>
+          <h3 class="text-2xl font-bold text-white mb-4">Troca de Tela</h3>
+          <p class="text-gray-400 mb-6">Para iPhone e Android com garantia de 3 meses</p>
+          <div class="flex items-center justify-between mb-6">
+            <span class="text-2xl font-bold text-gold">A partir de R$ 120</span>
+            <span class="text-gray-500 line-through text-sm">R$ 150</span>
+          </div>
+          <a href="https://wa.me/5585982163973?text=Olá! Gostaria da promoção de troca de tela!"
+            class="btn-gold w-full py-4 rounded-lg font-semibold text-center block">
+            <i class="fas fa-bolt mr-2"></i>QUERO ESTA OFERTA
+          </a>
+        </div>
+
+        <!-- Promo 2 -->
+        <div
+          class="feature-card bg-gradient-to-br from-gold/10 to-black rounded-2xl p-8 gold-border relative overflow-hidden group">
+          <div class="absolute -top-1 -right-4 bg-green-500 text-white px-6 py-2 rounded-full font-bold rotate-12 z-10">
+            GRÁTIS
+          </div>
+          <div class="text-gold text-4xl mb-6">
+            <i class="fas fa-tools"></i>
+          </div>
+          <h3 class="text-2xl font-bold text-white mb-4">Limpeza Interna</h3>
+          <p class="text-gray-400 mb-6">Serviço de limpeza completa grátis em qualquer conserto</p>
+          <div class="flex items-center justify-between mb-6">
+            <span class="text-2xl font-bold text-gold">Grátis</span>
+            <span class="text-gray-500 line-through text-sm">R$ 40</span>
+          </div>
+          <a href="https://wa.me/5585982163973?text=Olá! Gostaria da limpeza interna grátis!"
+            class="btn-gold w-full py-4 rounded-lg font-semibold text-center block">
+            <i class="fas fa-gift mr-2"></i>GARANTIR OFERTA
+          </a>
+        </div>
+
+        <!-- Promo 3 -->
+        <div
+          class="feature-card bg-gradient-to-br from-gold/10 to-black rounded-2xl p-8 gold-border relative overflow-hidden group">
+          <div class="absolute -top-1 -right-4 bg-blue-500 text-white px-6 py-2 rounded-full font-bold rotate-12 z-10">
+            NOVO
+          </div>
+          <div class="text-gold text-4xl mb-6">
+            <i class="fas fa-mug-hot"></i>
+          </div>
+          <h3 class="text-2xl font-bold text-white mb-4">Garrafa Personalizada</h3>
+          <p class="text-gray-400 mb-6">Sua garrafa térmica com design exclusivo</p>
+          <div class="flex items-center justify-between mb-6">
+            <span class="text-2xl font-bold text-gold">Apenas R$ 15</span>
+            <span class="text-gray-500 line-through text-sm">R$ 25</span>
+          </div>
+          <a href="https://wa.me/5585982163973?text=Olá! Gostaria de uma garrafa personalizada!"
+            class="btn-gold w-full py-4 rounded-lg font-semibold text-center block">
+            <i class="fas fa-palette mr-2"></i>PERSONALIZAR AGORA
+          </a>
+        </div>
+      </div>
+      <!-- Popup de Oferta Especial -->
+<div id="offer-popup" class="hidden fixed inset-0 z-[60] bg-black/70 flex items-center justify-center p-4">
+  <div class="bg-gradient-to-br from-dark to-black rounded-3xl gold-border p-8 max-w-md w-full mx-auto transform animate-slide-up relative">
+    <!-- Botão fechar -->
+    <button onclick="closeOffer()" class="absolute top-4 right-4 text-gray-400 hover:text-white transition-colors duration-300">
+      <i class="fas fa-times text-2xl"></i>
+      <span class="sr-only">Fechar popup</span>
+    </button>
+    
+    <!-- Conteúdo -->
+    <div class="text-center">
+      <!-- Ícone -->
+      <div class="w-20 h-20 bg-gradient-to-br from-gold to-yellow-200 rounded-full flex items-center justify-center mx-auto mb-6">
+        <i class="fas fa-gift text-2xl text-black"></i>
+      </div>
+      
+      <!-- Título -->
+      <h3 class="text-2xl font-bold text-white mb-4">
+        🎉 Oferta Especial!
+      </h3>
+      
+      <!-- Descrição -->
+      <p class="text-gray-300 mb-2 text-lg leading-relaxed">
+        <span class="text-gold font-semibold">Limpeza Interna GRÁTIS</span> no seu primeiro conserto!
+      </p>
+      
+      <p class="text-gray-400 mb-6 text-sm">
+        Aproveite esta oferta por tempo limitado
+      </p>
+      
+      <!-- Benefícios -->
+      <div class="space-y-2 mb-6 text-left">
+        <div class="flex items-center space-x-3 text-green-400">
+          <i class="fas fa-check-circle text-sm"></i>
+          <span class="text-gray-300 text-sm">Valor de R$ 40 grátis</span>
+        </div>
+        <div class="flex items-center space-x-3 text-green-400">
+          <i class="fas fa-check-circle text-sm"></i>
+          <span class="text-gray-300 text-sm">Aumenta a vida útil do aparelho</span>
+        </div>
+        <div class="flex items-center space-x-3 text-green-400">
+          <i class="fas fa-check-circle text-sm"></i>
+          <span class="text-gray-300 text-sm">Melhora o desempenho</span>
+        </div>
+      </div>
+      
+      <!-- Botão CTA -->
+      <button onclick="claimOffer()" 
+              class="btn-gold w-full py-4 rounded-xl text-lg font-bold transition-all duration-300 group mb-4">
+        <i class="fab fa-whatsapp mr-2"></i>
+        QUERO A OFERTA!
+        <i class="fas fa-arrow-right ml-2 group-hover:translate-x-1 transition-transform"></i>
+      </button>
+      
+      <!-- Link secundário -->
+      <button onclick="closeOffer()" 
+              class="text-gray-400 hover:text-white text-sm transition-colors duration-300">
+        Não quero esta oferta
+      </button>
+    </div>
+  </div>
+</div>
+
+      <div class="text-center mt-12">
+        <p class="text-gray-400 mb-6">⚠️ Ofertas válidas apenas esta semana!</p>
+        <a href="https://wa.me/5585982163973?text=Olá! Gostaria de saber sobre todas as promoções!"
+          class="border-2 border-gold text-gold hover:bg-gold hover:text-black px-8 py-4 rounded-lg text-lg font-bold transition-all duration-300 inline-flex items-center">
+          <i class="fab fa-whatsapp mr-2"></i>
+          VER TODAS AS PROMOÇÕES
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seção Serviços -->
+  <section id="servicos" class="py-20 bg-dark section-fade">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl md:text-5xl font-black text-white mb-6">
+          Nossos <span class="text-gold">Serviços</span>
+        </h2>
+        <div class="w-32 h-1 bg-gradient-to-r from-gold to-transparent mx-auto mb-6"></div>
+        <p class="text-xl text-gray-400 max-w-3xl mx-auto">
+          Especialistas em tecnologia com soluções completas para seus dispositivos
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Serviço 1 -->
+        <div class="feature-card rounded-2xl p-8 gold-border group">
+          <div class="text-gold text-5xl mb-6 transform group-hover:scale-110 transition-transform duration-300">
+            <i class="fas fa-mobile-alt"></i>
+          </div>
+          <img src="./img/apple-iphone-15-pro-cores.jpg" alt="Venda de Celulares"
+            class="rounded-xl mb-6 w-full h-48 object-cover transform group-hover:scale-105 transition-transform duration-300" />
+          <h3 class="text-2xl font-bold text-white mb-4">Venda de Celulares</h3>
+          <p class="text-gray-400 mb-6 leading-relaxed">
+            Trabalhamos com as melhores marcas e últimos lançamentos.
+            Smartphones novos e seminovos com garantia.
+          </p>
+          <div class="flex justify-between items-center">
+            <span class="text-gold font-bold text-lg">Parcelamos em até 18x</span>
+            <a href="https://wa.me/5585982163973?text=Olá! Gostaria de informações sobre celulares!"
+              class="text-gold font-semibold inline-flex items-center hover:underline">
+              Consultar <i class="fas fa-arrow-right ml-2 group-hover:translate-x-1 transition-transform"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Serviço 2 -->
+        <div class="feature-card rounded-2xl p-8 gold-border group">
+          <div class="text-gold text-5xl mb-6 transform group-hover:scale-110 transition-transform duration-300">
+            <i class="fas fa-tools"></i>
+          </div>
+          <img src="./img/post-5-assistencia-celular-1024x631.jpg" alt="Assistência Técnica"
+            class="rounded-xl mb-6 w-full h-48 object-cover transform group-hover:scale-105 transition-transform duration-300" />
+          <h3 class="text-2xl font-bold text-white mb-4">Assistência Técnica</h3>
+          <p class="text-gray-400 mb-6 leading-relaxed">
+            Conserto especializado com peças originais. Troca de tela, bateria,
+            conector e muito mais para iPhone e Android.
+          </p>
+          <div class="flex justify-between items-center">
+            <span class="text-gold font-bold text-lg">Orçamento Grátis</span>
+            <a href="https://wa.me/5585982163973?text=Olá! Gostaria de um orçamento para conserto!"
+              class="text-gold font-semibold inline-flex items-center hover:underline">
+              Agendar <i class="fas fa-arrow-right ml-2 group-hover:translate-x-1 transition-transform"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Serviço 3 -->
+        <div class="feature-card rounded-2xl p-8 gold-border group">
+          <div class="text-gold text-5xl mb-6 transform group-hover:scale-110 transition-transform duration-300">
+            <i class="fas fa-mug-hot"></i>
+          </div>
+          <img src="./img/garrafa-personalisada.png" alt="Garrafas Personalizadas"
+            class="rounded-xl mb-6 w-full h-48 object-cover transform group-hover:scale-105 transition-transform duration-300" />
+          <h3 class="text-2xl font-bold text-white mb-4">Personalização</h3>
+          <p class="text-gray-400 mb-6 leading-relaxed">
+            Garrafas térmicas personalizadas com designs exclusivos.
+            Presente perfeito para amigos, familiares ou empresas.
+          </p>
+          <div class="flex justify-between items-center">
+            <span class="text-gold font-bold text-lg">A partir de R$ 15</span>
+            <button onclick="toggleGarrafaInfo()"
+              class="text-gold font-semibold inline-flex items-center hover:underline">
+              Ver Modelos <i class="fas fa-chevron-down ml-2 group-hover:translate-y-1 transition-transform"></i>
+            </button>
+          </div>
+
+          <!-- Galeria de Garrafas (Expandível) -->
+          <div id="garrafa-info" class="hidden space-y-4 mt-6 animate-slide-up">
+            <div class="grid grid-cols-2 gap-4">
+              <img src="./img/garrafas-personalisadas/WhatsApp Image 2025-07-22 at 17.00.59.jpeg" alt="Modelo 1"
+                class="rounded-lg border border-gold/30 hover:scale-105 transition-transform cursor-pointer" />
+              <img src="./img/garrafas-personalisadas/WhatsApp Image 2025-07-22 at 17.01.00.jpeg" alt="Modelo 2"
+                class="rounded-lg border border-gold/30 hover:scale-105 transition-transform cursor-pointer" />
+              <img src="./img/garrafas-personalisadas/WhatsApp Image 2025-07-23 at 13.34.36 (1).jpeg" alt="Modelo 3"
+                class="rounded-lg border border-gold/30 hover:scale-105 transition-transform cursor-pointer" />
+              <img src="./img/garrafas-personalisadas/WhatsApp Image 2025-07-23 at 13.34.36.jpeg" alt="Modelo 4"
+                class="rounded-lg border border-gold/30 hover:scale-105 transition-transform cursor-pointer" />
+            </div>
+            <div class="space-y-4">
+              <video controls class="w-full rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+                <source src="./img/garrafas-personalisadas/WhatsApp Video 2025-07-22 at 17.10.38.mp4" type="video/mp4">
+                Seu navegador não suporta vídeo.
+              </video>
+              <video controls class="w-full rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+                <source src="./img/garrafas-personalisadas/WhatsApp Video 2025-07-23 at 14.17.42.mp4" type="video/mp4">
+                Seu navegador não suporta vídeo.
+              </video>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Call to Action Serviços -->
+      <div class="text-center mt-16">
+        <div class="bg-gradient-to-r from-gold/10 to-transparent rounded-2xl p-8 gold-border">
+          <h3 class="text-2xl md:text-3xl font-bold text-white mb-4">
+            Não encontrou o que procurava?
+          </h3>
+          <p class="text-gray-400 mb-6 text-lg">
+            Temos solução para diversos tipos de conserto e produtos!
+          </p>
+          <a href="https://wa.me/5585982163973?text=Olá! Gostaria de saber sobre outros serviços!"
+            class="btn-gold px-8 py-4 rounded-lg text-lg font-bold inline-flex items-center">
+            <i class="fab fa-whatsapp mr-2"></i>
+            FALAR COM ESPECIALISTA
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seção de Confiança -->
+  <section class="py-16 bg-black section-fade">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid md:grid-cols-4 gap-8 text-center">
+        <div class="text-gold">
+          <div class="text-4xl font-bold mb-2">+1000</div>
+          <div class="text-gray-400">Clientes Satisfeitos</div>
+        </div>
+        <div class="text-gold">
+          <div class="text-4xl font-bold mb-2">+5</div>
+          <div class="text-gray-400">Anos de Experiência</div>
+        </div>
+        <div class="text-gold">
+          <div class="text-4xl font-bold mb-2">24h</div>
+          <div class="text-gray-400">Orçamento Rápido</div>
+        </div>
+        <div class="text-gold">
+          <div class="text-4xl font-bold mb-2">100%</div>
+          <div class="text-gray-400">Peças Originais</div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Feedback Section -->
+  <section id="feedback" class="py-20 bg-dark section-fade">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl md:text-5xl font-black text-white mb-6">
+          O que dizem nossos <span class="text-gold">clientes</span>
+        </h2>
+        <div class="w-32 h-1 bg-gradient-to-r from-gold to-transparent mx-auto mb-6"></div>
+        <p class="text-xl text-gray-400 max-w-3xl mx-auto">
+          A opinião de quem confia no nosso trabalho! Mais de 1000 avaliações 5 estrelas.
+        </p>
+      </div>
+
+      <div class="grid lg:grid-cols-2 gap-12 items-start">
+        <!-- Formulário de Feedback -->
+        <div class="bg-gradient-to-br from-gold/5 to-black rounded-2xl p-8 gold-border">
+          <h3 class="text-2xl font-bold text-white mb-6">Deixe sua avaliação</h3>
+          <form id="form-feedback" action="https://formsubmit.co/arlantecgames@gmail.com" method="POST">
+            <input type="hidden" name="_captcha" value="false" />
+            <input type="hidden" name="_subject" value="⭐ Novo Feedback do Site ArlanCell!" />
+            <input type="hidden" name="nota" id="nota" value="0 estrelas" />
+
+            <div class="space-y-6">
+              <div>
+                <label for="nome" class="block text-gray-300 mb-3 font-semibold">Seu nome</label>
+                <input type="text" id="nome" name="nome" required
+                  class="w-full px-4 py-4 bg-gray-800 border border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-gold text-white placeholder-gray-500 transition-all"
+                  placeholder="Como gostaria de ser chamado?" />
+              </div>
+
+              <div>
+                <label for="aroba" class="block text-gray-300 mb-3 font-semibold">Seu Instagram</label>
+                <input type="text" id="aroba" name="@" required
+                  class="w-full px-4 py-4 bg-gray-800 border border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-gold text-white placeholder-gray-500 transition-all"
+                  placeholder="@seuinstagram" />
+              </div>
+
+              <!-- Substitua esta parte no formulário de feedback -->
+              <div>
+                <label class="block text-gray-300 mb-4 font-semibold">Sua avaliação</label>
+                <div class="flex justify-center space-x-2 mb-6" id="stars-container">
+                  <button type="button" class="feedback-star text-3xl text-gray-400" data-value="1"
+                    aria-label="1 estrela">
+                    <i class="far fa-star"></i>
+                  </button>
+                  <button type="button" class="feedback-star text-3xl text-gray-400" data-value="2"
+                    aria-label="2 estrelas">
+                    <i class="far fa-star"></i>
+                  </button>
+                  <button type="button" class="feedback-star text-3xl text-gray-400" data-value="3"
+                    aria-label="3 estrelas">
+                    <i class="far fa-star"></i>
+                  </button>
+                  <button type="button" class="feedback-star text-3xl text-gray-400" data-value="4"
+                    aria-label="4 estrelas">
+                    <i class="far fa-star"></i>
+                  </button>
+                  <button type="button" class="feedback-star text-3xl text-gray-400" data-value="5"
+                    aria-label="5 estrelas">
+                    <i class="far fa-star"></i>
+                  </button>
+                </div>
+              </div>
+
+              <div>
+                <label for="comentario" class="block text-gray-300 mb-3 font-semibold">Comentário</label>
+                <textarea id="comentario" name="comentario" rows="4" required
+                  class="w-full px-4 py-4 bg-gray-800 border border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-gold text-white placeholder-gray-500 transition-all resize-none"
+                  placeholder="Conte sua experiência com a ArlanCell..."></textarea>
+              </div>
+
+              <button type="submit"
+                class="btn-gold w-full py-4 rounded-lg text-lg font-semibold transition-all duration-300 group">
+                <i class="fas fa-paper-plane mr-2"></i>
+                ENVIAR AVALIAÇÃO
+                <i class="fas fa-arrow-right ml-2 group-hover:translate-x-1 transition-transform"></i>
+              </button>
+            </div>
+          </form>
+        </div>
+
+        <!-- Carrossel de Depoimentos -->
+        <div class="max-w-xl mx-auto">
+          <div class="bg-gradient-to-br from-gold/5 to-black rounded-2xl p-8 gold-border">
+            <div class="flex items-center space-x-4 mb-8">
+              <div class="text-gold text-3xl">
+                <i class="fas fa-quote-left"></i>
+              </div>
+              <div>
+                <h3 class="text-2xl font-bold text-white">Avaliações Reais</h3>
+                <p class="text-gray-400">De clientes satisfeitos</p>
+              </div>
+            </div>
+
+            <div class="flex gap-6 items-start">
+              <!-- Miniaturas -->
+              <div id="testimonial-thumbs" class="flex flex-col space-y-4 max-h-[400px] overflow-y-auto pr-4">
+                <!-- Miniaturas serão criadas dinamicamente via JS -->
+              </div>
+
+              <!-- Depoimento Principal -->
+              <div id="testimonial-main"
+                class="flex-1 transition-all duration-500 ease-in-out transform hover:scale-105">
+                <div class="flex items-center space-x-4 mb-6">
+                  <img id="testimonial-avatar" src="" alt="Avatar do cliente"
+                    class="w-20 h-20 rounded-full border-4 border-gold object-cover shadow-lg" />
+                  <div class="flex-1">
+                    <h3 id="testimonial-name" class="font-bold text-xl text-white"></h3>
+                    <span id="testimonial-handle" class="text-gold text-sm block mb-2"></span>
+                    <div id="testimonial-stars" class="text-gold text-lg"></div>
+                  </div>
+                </div>
+                <p id="testimonial-text" class="text-gray-300 text-lg leading-relaxed italic"></p>
+                <div class="text-right mt-4 text-gold text-2xl">
+                  <i class="fas fa-quote-right"></i>
+                </div>
+              </div>
+            </div>
+
+            <!-- Controles do Carrossel -->
+            <div class="flex justify-center space-x-4 mt-8">
+              <button id="prev-testimonial" class="text-gold hover:text-yellow-300 transition p-2">
+                <i class="fas fa-chevron-left text-xl"></i>
+              </button>
+              <div class="flex space-x-2 items-center">
+                <span id="testimonial-counter" class="text-gray-400 font-semibold">1/11</span>
+              </div>
+              <button id="next-testimonial" class="text-gold hover:text-yellow-300 transition p-2">
+                <i class="fas fa-chevron-right text-xl"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contato Section -->
+  <section id="contato" class="py-20 bg-black section-fade">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl md:text-5xl font-black text-white mb-6">
+          Fale <span class="text-gold">Conosco</span>
+        </h2>
+        <div class="w-32 h-1 bg-gradient-to-r from-gold to-transparent mx-auto mb-6"></div>
+        <p class="text-xl text-gray-400 max-w-3xl mx-auto">
+          Estamos prontos para atender você! Entre em contato pelos canais abaixo.
+        </p>
+      </div>
+
+      <div class="grid lg:grid-cols-2 gap-12 items-start">
+        <!-- Informações de Contato -->
+        <div class="space-y-8">
+          <div class="bg-gradient-to-br from-gold/5 to-black rounded-2xl p-8 gold-border">
+            <h3 class="text-2xl font-bold text-white mb-6">Nossos Canais</h3>
+
+            <div class="space-y-6">
+              <!-- Telefone -->
+              <div class="flex items-start space-x-4 group cursor-pointer"
+                onclick="window.location.href='tel:5585982163973'">
+                <div class="text-gold text-2xl mt-1 group-hover:scale-110 transition-transform">
+                  <i class="fas fa-phone-alt"></i>
+                </div>
+                <div class="flex-1">
+                  <h4 class="font-semibold text-white text-lg mb-1 group-hover:text-gold transition">Telefone</h4>
+                  <p class="text-gray-400">(85) 98216-3973</p>
+                  <p class="text-gray-500 text-sm mt-1">Clique para ligar</p>
+                </div>
+              </div>
+
+              <!-- WhatsApp -->
+              <div class="flex items-start space-x-4 group cursor-pointer"
+                onclick="window.open('https://wa.me/5585982163973?text=Olá! Gostaria de informações!', '_blank')">
+                <div class="text-green-500 text-2xl mt-1 group-hover:scale-110 transition-transform">
+                  <i class="fab fa-whatsapp"></i>
+                </div>
+                <div class="flex-1">
+                  <h4 class="font-semibold text-white text-lg mb-1 group-hover:text-green-500 transition">WhatsApp</h4>
+                  <p class="text-gray-400">(85) 98216-3973</p>
+                  <p class="text-gray-500 text-sm mt-1">Atendimento rápido via WhatsApp</p>
+                  <div class="mt-3">
+                    <a href="https://wa.me/5585982163973?text=Olá! Gostaria de informações!" target="_blank"
+                      class="bg-green-500 hover:bg-green-600 px-4 py-2 rounded-lg text-white font-medium inline-flex items-center transition">
+                      <i class="fab fa-whatsapp mr-2"></i>
+                      Chamar no WhatsApp
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Instagram -->
+              <div class="flex items-start space-x-4 group cursor-pointer"
+                onclick="window.open('https://www.instagram.com/arlancell/', '_blank')">
+                <div class="text-pink-500 text-2xl mt-1 group-hover:scale-110 transition-transform">
+                  <i class="fab fa-instagram"></i>
+                </div>
+                <div class="flex-1">
+                  <h4 class="font-semibold text-white text-lg mb-1 group-hover:text-pink-500 transition">Instagram</h4>
+                  <p class="text-gray-400">@ArlanCell</p>
+                  <p class="text-gray-500 text-sm mt-1">Siga-nos para novidades</p>
+                  <div class="mt-3">
+                    <a href="https://www.instagram.com/arlancell/" target="_blank"
+                      class="bg-gradient-to-r from-pink-500 to-purple-600 hover:from-pink-600 hover:to-purple-700 px-4 py-2 rounded-lg text-white font-medium inline-flex items-center transition">
+                      <i class="fab fa-instagram mr-2"></i>
+                      Seguir no Instagram
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Endereço -->
+              <div class="flex items-start space-x-4">
+                <div class="text-gold text-2xl mt-1">
+                  <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-white text-lg mb-1">Nosso Endereço</h4>
+                  <address class="not-italic text-gray-400 leading-relaxed">
+                    Av. Tiradentes, 745<br>
+                    Centro - Aracoiaba/CE<br>
+                    CEP: 62750-000
+                  </address>
+                  <p class="text-gray-500 text-sm mt-2">Venha nos visitar!</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Horário de Funcionamento -->
+          <div class="bg-gradient-to-br from-gold/5 to-black rounded-2xl p-8 gold-border">
+            <h3 class="text-2xl font-bold text-white mb-6">Horário de Atendimento</h3>
+            <div class="space-y-3">
+              <div class="flex justify-between items-center">
+                <span class="text-gray-400">Segunda a Sexta</span>
+                <span class="text-gold font-semibold">8:00 - 18:00</span>
+              </div>
+              <div class="flex justify-between items-center">
+                <span class="text-gray-400">Sábados</span>
+                <span class="text-gold font-semibold">8:00 - 12:00</span>
+              </div>
+              <div class="flex justify-between items-center">
+                <span class="text-gray-400">WhatsApp</span>
+                <span class="text-green-500 font-semibold">24/7</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mapa e Imagem -->
+        <div class="space-y-8">
+          <div class="bg-gradient-to-br from-gold/5 to-black rounded-2xl p-8 gold-border">
+            <h3 class="text-2xl font-bold text-white mb-6">Visite Nossa Loja</h3>
+            <div class="relative">
+              <!-- Mapa Interativo do Google Maps -->
+              <!-- Mapa e Imagem -->
+              <div class="space-y-8">
+                <div class="bg-gradient-to-br from-gold/5 to-black rounded-2xl p-8 gold-border">
+                  <h3 class="text-2xl font-bold text-white mb-6">Visite Nossa Loja</h3>
+                  <div class="relative">
+                    <!-- Mapa e Imagem -->
+                    <div class="space-y-8">
+                      <div class="bg-gradient-to-br from-gold/5 to-black rounded-2xl p-8 gold-border">
+                        <h3 class="text-2xl font-bold text-white mb-6">Visite Nossa Loja</h3>
+                        <div class="relative">
+                          <!-- Mapa Interativo do Google Maps -->
+                          <div class="rounded-xl shadow-2xl overflow-hidden w-full h-64">
+                            <iframe
+                              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3977.424194632084!2d-38.81193492501815!3d-4.370978141213461!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7bf2d2d9c0adef5%3A0x7e6a6d4960458ad0!2sArlan%20Cell!5e0!3m2!1spt-BR!2sbr!4v1696000000000!5m2!1spt-BR!2sbr"
+                              width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                              referrerpolicy="no-referrer-when-downgrade"
+                              class="transform hover:scale-105 transition-transform duration-500">
+                            </iframe>
+                          </div>
+
+                          <!-- Botão que abre no Google Maps -->
+                          <a href="https://www.google.com/maps/dir/?api=1&destination=Arlan+Cell+Aracoiaba&destination_place_id=ChIJR3XmosG-tNs7WxijSzkYTw"
+                            target="_blank"
+                            class="absolute -bottom-4 -right-4 bg-gold text-black px-6 py-3 rounded-lg font-bold shadow-lg transform hover:scale-105 transition-transform hover:bg-yellow-500 flex items-center gap-2">
+                            <i class="fas fa-map-marker-alt"></i>
+                            Abrir no Maps
+                          </a>
+                        </div>
+
+                        <!-- Informações adicionais abaixo do mapa -->
+                        <div class="mt-6 text-center">
+                          <p class="text-gray-400 mb-4">Clique no botão para abrir no aplicativo do Google Maps</p>
+                          <div class="flex flex-col sm:flex-row gap-3 justify-center">
+                            <a href="https://www.google.com/maps/dir/?api=1&destination=Arlan+Cell+Aracoiaba&travelmode=driving"
+                              target="_blank"
+                              class="bg-yellow-500 hover:bg-yellow-600 text-white px-4 py-2 rounded-lg font-semibold transition-all flex items-center justify-center gap-2">
+                              <i class="fas fa-car"></i>
+                              Rotas de Carro
+                            </a>
+                            <a href="https://www.google.com/maps/dir/?api=1&destination=Arlan+Cell+Aracoiaba&travelmode=motorcycle"
+                              target="_blank"
+                              class="bg-blue-600 hover:bg-blue-800 text-white px-4 py-2 rounded-lg font-semibold transition-all flex items-center justify-center gap-2">
+                              <i class="fas fa-motorcycle"></i>
+                              Rotas de Moto
+                            </a>
+                            <a href="https://www.google.com/maps/dir/?api=1&destination=Arlan+Cell+Aracoiaba&travelmode=walking"
+                              target="_blank"
+                              class="bg-red-500 hover:bg-red-700 text-white px-4 py-2 rounded-lg font-semibold transition-all flex items-center justify-center gap-2">
+                              <i class="fas fa-walking"></i>
+                              Rotas a Pé
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+
+
+                      <!-- Chamada de Ação Final -->
+                      <div class="bg-gradient-to-r from-gold/10 to-gold/5 rounded-2xl p-8 gold-border text-center">
+                        <h3 class="text-2xl font-bold text-white mb-4">Pronto para resolver seu problema?</h3>
+                        <p class="text-gray-400 mb-6">
+                          Entre em contato agora mesmo e receba um orçamento gratuito!
+                        </p>
+                        <div class="space-y-4">
+                          <a href="https://wa.me/5585982163973?text=Olá! Gostaria de um orçamento gratuito!"
+                            class="btn-gold w-full py-4 rounded-lg text-lg font-bold block transition-all duration-300 group">
+                            <i class="fab fa-whatsapp mr-2"></i>
+                            ORÇAMENTO GRÁTIS NO WHATSAPP
+                          </a>
+                          <a href="tel:5585982163973"
+                            class="border-2 border-gold text-gold hover:bg-gold hover:text-black w-full py-4 rounded-lg text-lg font-bold block transition-all duration-300">
+                            <i class="fas fa-phone-alt mr-2"></i>
+                            LIGAR AGORA
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+  </section>
+
+  <!-- Rodapé -->
+  <footer class="bg-gradient-to-b from-dark to-black pt-20 pb-8 border-t border-gold/30 relative overflow-hidden">
+  <!-- Elementos decorativos de fundo -->
+  <div class="absolute inset-0 opacity-5">
+    <div class="absolute top-0 left-0 w-32 h-32 bg-gold rounded-full blur-3xl"></div>
+    <div class="absolute bottom-0 right-0 w-40 h-40 bg-gold rounded-full blur-3xl"></div>
+  </div>
+
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+    <div class="grid lg:grid-cols-4 md:grid-cols-2 gap-8 mb-16">
+      <!-- Coluna 1 - Logo e Sobre -->
+      <div class="lg:col-span-1">
+        <div class="flex items-center space-x-4 mb-6">
+          <img src="./logo-site-ofc.png" alt="Logo ArlanCell" class="h-16 filter brightness-110" />
+          <div>
+            <div class="text-gold font-bold text-xl">ArlanCell</div>
+            <div class="text-gray-400 text-sm">Celulares & Acessórios</div>
+          </div>
+        </div>
+        <p class="text-gray-300 mb-6 leading-relaxed text-lg">
+          Especialistas em assistência técnica e venda de celulares em Aracoiaba. 
+          <span class="text-gold font-semibold">Qualidade e confiança desde 2014.</span>
+        </p>
+        
+        <!-- Redes Sociais Melhoradas -->
+        <div class="flex space-x-4 mb-6">
+          <a href="https://www.instagram.com/arlancell/" 
+             class="group relative bg-gradient-to-br from-pink-500 to-purple-600 w-12 h-12 rounded-2xl flex items-center justify-center transform hover:scale-110 hover:rotate-3 transition-all duration-300 shadow-lg">
+            <i class="fab fa-instagram text-white text-xl"></i>
+            <div class="absolute inset-0 bg-white/10 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+          </a>
+          <a href="https://wa.me/5585982163973?text=Olá! Gostaria de informações!" 
+             class="group relative bg-gradient-to-br from-green-500 to-green-600 w-12 h-12 rounded-2xl flex items-center justify-center transform hover:scale-110 hover:-rotate-3 transition-all duration-300 shadow-lg">
+            <i class="fab fa-whatsapp text-white text-xl"></i>
+            <div class="absolute inset-0 bg-white/10 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+          </a>
+          <a href="tel:5585982163973" 
+             class="group relative bg-gradient-to-br from-gold to-yellow-500 w-12 h-12 rounded-2xl flex items-center justify-center transform hover:scale-110 hover:rotate-3 transition-all duration-300 shadow-lg">
+            <i class="fas fa-phone-alt text-black text-xl"></i>
+            <div class="absolute inset-0 bg-white/20 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+          </a>
+        </div>
+
+        <!-- Badge de Destaque -->
+        <div class="bg-gold/10 border border-gold/30 rounded-2xl p-4">
+          <div class="flex items-center space-x-2 text-gold">
+            <i class="fas fa-award text-lg"></i>
+            <span class="font-semibold">+1000 clientes satisfeitos</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Coluna 2 - Nossos Serviços -->
+      <div>
+        <h4 class="text-xl font-bold mb-6 text-white relative inline-block">
+          <span class="bg-gradient-to-r from-gold to-yellow-200 bg-clip-text text-transparent">Nossos Serviços</span>
+          <div class="absolute -bottom-2 left-0 w-12 h-1 bg-gradient-to-r from-gold to-transparent rounded-full"></div>
+        </h4>
+        <ul class="space-y-4">
+          <li>
+            <a href="#servicos-detalhados" 
+               class="group flex items-center space-x-3 text-gray-300 hover:text-white transition-all duration-300 py-2">
+              <div class="w-2 h-2 bg-gold rounded-full transform group-hover:scale-150 transition-transform duration-300"></div>
+              <span class="group-hover:translate-x-2 transition-transform duration-300">Assistência Técnica iPhone/Android</span>
+            </a>
+          </li>
+          <li>
+            <a href="#servicos-detalhados" 
+               class="group flex items-center space-x-3 text-gray-300 hover:text-white transition-all duration-300 py-2">
+              <div class="w-2 h-2 bg-green-400 rounded-full transform group-hover:scale-150 transition-transform duration-300"></div>
+              <span class="group-hover:translate-x-2 transition-transform duration-300">Venda de Celulares Novos</span>
+            </a>
+          </li>
+          <li>
+            <a href="#servicos-detalhados" 
+               class="group flex items-center space-x-3 text-gray-300 hover:text-white transition-all duration-300 py-2">
+              <div class="w-2 h-2 bg-blue-400 rounded-full transform group-hover:scale-150 transition-transform duration-300"></div>
+              <span class="group-hover:translate-x-2 transition-transform duration-300">Venda de Celulares Seminovos</span>
+            </a>
+          </li>
+          <li>
+            <a href="#servicos-detalhados" 
+               class="group flex items-center space-x-3 text-gray-300 hover:text-white transition-all duration-300 py-2">
+              <div class="w-2 h-2 bg-purple-400 rounded-full transform group-hover:scale-150 transition-transform duration-300"></div>
+              <span class="group-hover:translate-x-2 transition-transform duration-300">Acessórios Originais</span>
+            </a>
+          </li>
+          <li>
+            <a href="#servicos-detalhados" 
+               class="group flex items-center space-x-3 text-gray-300 hover:text-white transition-all duration-300 py-2">
+              <div class="w-2 h-2 bg-pink-400 rounded-full transform group-hover:scale-150 transition-transform duration-300"></div>
+              <span class="group-hover:translate-x-2 transition-transform duration-300">Garrafas Personalizadas</span>
+            </a>
+          </li>
+          <li>
+            <a href="#servicos-detalhados" 
+               class="group flex items-center space-x-3 text-gray-300 hover:text-white transition-all duration-300 py-2">
+              <div class="w-2 h-2 bg-orange-400 rounded-full transform group-hover:scale-150 transition-transform duration-300"></div>
+              <span class="group-hover:translate-x-2 transition-transform duration-300">Manutenção de Notebooks</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Coluna 3 - Links Rápidos -->
+      <div>
+        <h4 class="text-xl font-bold mb-6 text-white relative inline-block">
+          <span class="bg-gradient-to-r from-gold to-yellow-200 bg-clip-text text-transparent">Links Rápidos</span>
+          <div class="absolute -bottom-2 left-0 w-12 h-1 bg-gradient-to-r from-gold to-transparent rounded-full"></div>
+        </h4>
+        <ul class="space-y-4">
+          <li>
+            <a href="#promocoes" 
+               class="group flex items-center space-x-3 text-gray-300 hover:text-white transition-all duration-300 py-2">
+              <i class="fas fa-bolt text-gold text-sm transform group-hover:scale-125 transition-transform duration-300"></i>
+              <span class="group-hover:translate-x-2 transition-transform duration-300">Promoções da Semana</span>
+            </a>
+          </li>
+          <li>
+            <a href="#feedback" 
+               class="group flex items-center space-x-3 text-gray-300 hover:text-white transition-all duration-300 py-2">
+              <i class="fas fa-star text-gold text-sm transform group-hover:scale-125 transition-transform duration-300"></i>
+              <span class="group-hover:translate-x-2 transition-transform duration-300">Avaliações</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://wa.me/5585982163973?text=Orçamento" 
+               class="group flex items-center space-x-3 text-gray-300 hover:text-white transition-all duration-300 py-2">
+              <i class="fas fa-file-invoice-dollar text-gold text-sm transform group-hover:scale-125 transition-transform duration-300"></i>
+              <span class="group-hover:translate-x-2 transition-transform duration-300">Orçamento Grátis</span>
+            </a>
+          </li>
+          <li>
+            <a href="#contato" 
+               class="group flex items-center space-x-3 text-gray-300 hover:text-white transition-all duration-300 py-2">
+              <i class="fas fa-clock text-gold text-sm transform group-hover:scale-125 transition-transform duration-300"></i>
+              <span class="group-hover:translate-x-2 transition-transform duration-300">Horário de Funcionamento</span>
+            </a>
+          </li>
+          <li>
+            <a href="#contato" 
+               class="group flex items-center space-x-3 text-gray-300 hover:text-white transition-all duration-300 py-2">
+              <i class="fas fa-map-marker-alt text-gold text-sm transform group-hover:scale-125 transition-transform duration-300"></i>
+              <span class="group-hover:translate-x-2 transition-transform duration-300">Localização</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Coluna 4 - Ajuda e Contato -->
+      <div>
+        <h4 class="text-xl font-bold mb-6 text-white relative inline-block">
+          <span class="bg-gradient-to-r from-gold to-yellow-200 bg-clip-text text-transparent">Precisa de Ajuda?</span>
+          <div class="absolute -bottom-2 left-0 w-12 h-1 bg-gradient-to-r from-gold to-transparent rounded-full"></div>
+        </h4>
+        
+        <div class="bg-gradient-to-br from-gold/10 to-gold/5 border border-gold/20 rounded-2xl p-6 mb-6">
+          <p class="text-gray-200 mb-4 text-lg leading-relaxed">
+            Estamos aqui para resolver seus problemas com <span class="text-gold font-semibold">agilidade e qualidade</span>!
+          </p>
+          <div class="space-y-3">
+            <div class="flex items-center space-x-2 text-green-400">
+              <i class="fas fa-check-circle"></i>
+              <span class="text-sm">Atendimento Personalizado</span>
+            </div>
+            <div class="flex items-center space-x-2 text-green-400">
+              <i class="fas fa-check-circle"></i>
+              <span class="text-sm">Orçamento Grátis</span>
+            </div>
+            <div class="flex items-center space-x-2 text-green-400">
+              <i class="fas fa-check-circle"></i>
+              <span class="text-sm">Garantia em Todos os Serviços</span>
+            </div>
+          </div>
+        </div>
+
+        <a href="https://wa.me/5585982163973?text=Preciso de ajuda!"
+           class="group relative bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 px-6 py-4 rounded-2xl text-white font-bold inline-flex items-center justify-center w-full transition-all duration-300 transform hover:scale-105 shadow-lg">
+          <i class="fab fa-whatsapp mr-3 text-xl"></i>
+          Suporte Rápido
+          <i class="fas fa-arrow-right ml-2 transform group-hover:translate-x-1 transition-transform duration-300"></i>
+          <div class="absolute inset-0 bg-white/10 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+        </a>
+
+        <!-- Informações de Contato Rápidas -->
+        <div class="mt-6 space-y-2 text-sm text-gray-400">
+          <div class="flex items-center space-x-2">
+            <i class="fas fa-phone text-gold text-xs"></i>
+            <span>(85) 98216-3973</span>
+          </div>
+          <div class="flex items-center space-x-2">
+            <i class="fas fa-map-marker-alt text-gold text-xs"></i>
+            <span>Aracoiaba/CE</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Divisor Decorativo -->
+    <div class="relative mb-8">
+      <div class="absolute inset-0 flex items-center">
+        <div class="w-full border-t border-gold/20"></div>
+      </div>
+      <div class="relative flex justify-center">
+        <div class="bg-dark px-6 py-2">
+          <div class="flex space-x-2">
+            <div class="w-2 h-2 bg-gold rounded-full"></div>
+            <div class="w-2 h-2 bg-gold rounded-full"></div>
+            <div class="w-2 h-2 bg-gold rounded-full"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Rodapé Inferior -->
+    <div class="flex flex-col lg:flex-row justify-between items-center space-y-4 lg:space-y-0">
+      <div class="text-center lg:text-left">
+        <p class="text-gray-400 text-sm">
+          © 2014 - 2024 <span class="text-gold font-semibold">ArlanCell Celulares e Acessórios</span>. Todos os direitos reservados.
+        </p>
+      </div>
+      
+      <div class="flex items-center space-x-6 text-gray-400 text-sm">
+        <span class="flex items-center space-x-2 hover:text-red-400 transition-colors duration-300 cursor-pointer">
+          <i class="fas fa-heart text-red-400"></i>
+          <span>Feito com amor para Aracoiaba</span>
+        </span>
+        <div class="w-px h-4 bg-gray-600"></div>
+        <span class="hover:text-gold transition-colors duration-300 cursor-pointer">
+          Política de Privacidade
+        </span>
+        <div class="w-px h-4 bg-gray-600"></div>
+        <span class="hover:text-gold transition-colors duration-300 cursor-pointer">
+          Termos de Serviço
+        </span>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- Sistema de Notificação (Opcional) -->
+<div id="notification-toast" class="hidden fixed top-4 right-4 bg-green-600 text-white px-6 py-4 rounded-lg shadow-2xl z-50 max-w-sm">
+    <div class="flex items-center space-x-3">
+        <i class="fas fa-bell text-xl"></i>
+        <div>
+            <p class="font-semibold">Notificação Enviada!</p>
+            <p class="text-sm opacity-90">O dono foi avisado do seu interesse.</p>
+        </div>
+    </div>
+</div>
+
+<!-- Script de Notificações -->
+<script src="js/notifications.js"></script>
+<script src="js/script.js"></script>
+
+  <!-- Scripts -->
+<script src="./js/script.js"></script>
+</body>
+
+</html>

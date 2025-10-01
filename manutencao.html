@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Em Manutenção - ArlanCell Celulares e Acessórios</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            gold: '#D4AF37',
+            black: '#000000',
+            dark: '#121212',
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- FontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="./logo-site.png" type="image/png" />
+
+  <!-- Font Google -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
+
+  <style>
+    body {
+      background: linear-gradient(135deg, #000000 0%, #121212 100%);
+      font-family: 'Poppins', sans-serif;
+      color: #fff;
+      min-height: 100vh;
+    }
+
+    .maintenance-card {
+      background: linear-gradient(145deg, rgba(18, 18, 18, 0.95) 0%, rgba(0, 0, 0, 0.98) 100%);
+      backdrop-filter: blur(20px);
+      border: 2px solid rgba(212, 175, 55, 0.3);
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { box-shadow: 0 0 0 0 rgba(212, 175, 55, 0.4); }
+      50% { box-shadow: 0 0 0 20px rgba(212, 175, 55, 0); }
+    }
+
+    .btn-gold {
+      background: linear-gradient(135deg, #d4af37 0%, #f5d085 100%);
+      color: #000;
+      font-weight: 600;
+      transition: all 0.3s ease;
+    }
+
+    .btn-gold:hover {
+      background: linear-gradient(135deg, #f5d085 0%, #d4af37 100%);
+      transform: translateY(-2px);
+      box-shadow: 0 10px 25px rgba(212, 175, 55, 0.4);
+    }
+  </style>
+</head>
+
+<body class="antialiased flex items-center justify-center min-h-screen p-4">
+  <div class="maintenance-card rounded-3xl p-8 md:p-12 text-center max-w-2xl w-full">
+    <!-- Logo -->
+    <div class="mb-8">
+      <img src="./logo-site-ofc.png" alt="ArlanCell" class="h-16 mx-auto mb-4">
+      <h1 class="text-2xl font-bold text-gold">ArlanCell</h1>
+      <p class="text-gray-400">Celulares e Acessórios</p>
+    </div>
+
+    <!-- Ícone de Manutenção -->
+    <div class="text-6xl text-gold mb-8">
+      <i class="fas fa-tools"></i>
+    </div>
+
+    <!-- Mensagem Principal -->
+    <h2 class="text-3xl md:text-4xl font-black text-white mb-6">
+      Estamos Fazendo <span class="text-gold">Melhorias</span>!
+    </h2>
+
+    <div class="w-24 h-1 bg-gold mx-auto mb-6"></div>
+
+    <p class="text-xl text-gray-300 mb-8 leading-relaxed">
+      Esta área está passando por uma atualização para oferecer uma experiência ainda melhor para você!
+    </p>
+
+    <!-- Contador (Opcional) -->
+    <div class="bg-gold/20 border border-gold/30 rounded-2xl p-6 mb-8">
+      <p class="text-gold font-semibold text-lg mb-2">
+        <i class="fas fa-clock mr-2"></i>Voltamos em breve!
+      </p>
+      <p class="text-gray-300">
+        Estamos trabalhando para liberar o mais rápido possível
+      </p>
+    </div>
+
+    <!-- Canais Alternativos -->
+    <div class="space-y-4 mb-8">
+      <p class="text-gray-400">
+        Enquanto isso, entre em contato pelos nossos canais:
+      </p>
+      
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="https://wa.me/5585982163973?text=Olá! Vi que o site está em manutenção, gostaria de informações!" 
+           class="btn-gold px-6 py-4 rounded-lg font-semibold flex items-center justify-center">
+          <i class="fab fa-whatsapp mr-2 text-lg"></i>
+          WhatsApp
+        </a>
+        
+        <a href="https://www.instagram.com/arlancell/" 
+           class="border-2 border-gold text-gold hover:bg-gold hover:text-black px-6 py-4 rounded-lg font-semibold flex items-center justify-center transition-all">
+          <i class="fab fa-instagram mr-2 text-lg"></i>
+          Instagram
+        </a>
+
+        <a href="tel:5585982163973"
+           class="border-2 border-gray-600 text-gray-300 hover:border-gold hover:text-gold px-6 py-4 rounded-lg font-semibold flex items-center justify-center transition-all">
+          <i class="fas fa-phone-alt mr-2 text-lg"></i>
+          Telefone
+        </a>
+      </div>
+    </div>
+
+    <!-- Voltar para Home -->
+    <div class="pt-6 border-t border-gray-800">
+      <a href="https://arlancell.netlify.app" 
+         class="text-gold hover:text-yellow-300 font-semibold inline-flex items-center transition">
+        <i class="fas fa-arrow-left mr-2"></i>
+        Voltar para Página Principal
+      </a>
+    </div>
+
+    <!-- Informações de Contato -->
+    <div class="mt-8 text-sm text-gray-500">
+      <p>📞 <strong>(85) 98216-3973</strong></p>
+      <p>📍 Av. Tiradentes, 745 - Centro, Aracoiaba/CE</p>
+    </div>
+  </div>
+
+  <script>
+    // Efeito de digitação na mensagem
+    const messages = [
+      "Melhorando sua experiência...",
+      "Preparando novidades...", 
+      "Quase lá...",
+      "Carregando melhorias..."
+    ];
+    
+    let currentMessage = 0;
+    const messageElement = document.createElement('p');
+    messageElement.className = 'text-gold text-sm mt-4';
+    document.querySelector('.maintenance-card').appendChild(messageElement);
+
+    function typeWriter(text, element, speed = 100) {
+      let i = 0;
+      element.innerHTML = '';
+      
+      function typing() {
+        if (i < text.length) {
+          element.innerHTML += text.charAt(i);
+          i++;
+          setTimeout(typing, speed);
+        } else {
+          setTimeout(() => {
+            currentMessage = (currentMessage + 1) % messages.length;
+            typeWriter(messages[currentMessage], element);
+          }, 2000);
+        }
+      }
+      typing();
+    }
+
+    // Iniciar efeito de digitação
+    typeWriter(messages[0], messageElement);
+  </script>
+</body>
+</html>

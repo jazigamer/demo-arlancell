@@ -1,0 +1,112 @@
+
+
+Redesign completo do site ArlanCell com:
+1. Esquema de cores preto e dourado profissional
+2. Área de feedback funcional substituindo o email
+3. Instagram como principal rede social
+4. Imagens profissionais inseridas em todas as seções
+5. Design premium e moderno
+6. Totalmente responsivo
+
+Você pode copiar este código completo em um único arquivo HTML para implementação imediata.
+
+feedback top 10
+1°
+nota:
+5 estrelas
+nome:
+Francisco Célio Gomes Barbosa
+@:
+@celio_barbosa
+comentario:
+Sua personalização em copos térmico é perfeito super indico
+2°
+nota:
+5 estrelas
+nome:
+Marcílio Nery
+@:
+@marciliomelo221
+comentario:
+O melhor atendimento e melhor avaliador de Araçoiaba 👏👏👏
+3°
+nota:
+5 estrelas
+nome:
+Gabriel
+@:
+Silvazkk7_
+comentario:
+Só oferece produtos de qualidade
+4°
+nota:
+5 estrelas
+nome:
+Vanessa
+@:
+@wanessagadelha
+comentario:
+Ótimo Atendimento, Excelente Profissional A Melhor Loja Da Região Sem Dúvidas 🙅🏻‍♀️ Entregas Rápidas Pra Toda A Região 🤝
+5°
+nota:
+5 estrelas
+nome:
+Noeli
+@:
+@antonia.campos12
+comentario:
+Um ótimo trabalho 🙂
+6°
+nota:
+5 estrelas
+nome:
+Gabriel costa
+@:
+@_ogabi_
+comentario:
+Produtos tops ótima qualidade, sem falar em um ótimo atendimento 😉
+7°
+nota:
+5 estrelas
+nome:
+Geovanna
+@:
+@giov4nna.___
+comentario:
+Otimo
+8°
+nota:
+5 estrelas
+nome:
+Daciellealmeida
+@:
+Daccy Almeida
+comentario:
+Trabalho com Excelência
+9°
+nota:
+5 estrelas
+nome:
+João Eudes
+@:
+@joaoeudes
+comentario:
+A melhor assistência da cidade!
+10°
+nota:
+5 estrelas
+nome:
+Francisco Jonas rocha da Silva
+@:
+Csilvaxx_02
+comentario:
+A melhor que tem em Aracoiaba 🔥🚀
+11°
+nota:
+5 estrelas
+nome:
+Julio
+@:
+Juliosousah1231
+comentario:
+Amo os produtos tudo de qualidade
